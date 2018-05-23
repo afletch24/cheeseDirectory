@@ -1,0 +1,22 @@
+img{
+    height: 200px;
+    width:200px;
+}
+
+.cards{
+    border: 2px solid black;
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+    display: inline-block;
+     border-radius: 6px;
+    background-color: #FFD78E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s;
+    text-align: center;
+}
+.cards:hover{
+    transform: scale(1.02);
+    transition: all 0.5s;
+     
+}
