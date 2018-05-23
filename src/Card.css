@@ -10,13 +10,15 @@ img{
     padding: 10px;
     display: inline-block;
      border-radius: 6px;
-    background-color: #FFD78E;
+    background-color: #FFF2DA;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: all 0.5s;
     text-align: center;
 }
 .cards:hover{
     transform: scale(1.02);
-    transition: all 0.5s;
-     
+    transition: all 0.5s;   
+}
+h2{
+    font-family: 'Courgette', cursive;
 }

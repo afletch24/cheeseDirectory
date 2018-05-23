@@ -14,18 +14,20 @@ class App extends Component{
     }
     onSearchChange = (event) => {
         this.setState({searchfield: event.target.value})
+        
+    }
+
+   render(){
         const filteredCheese = this.state.cheese.filter(cheese => {
             return cheese.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
         })
         console.log(filteredCheese);
-    }
 
-   render(){
         return(
             <div className="background">
                 <h1> Cheese </h1>
                 <SearchBox searchChange = {this.onSearchChange}/>
-                <CardList cheese={ this.state.cheese } />
+                <CardList cheese={ filteredCheese } />
             </div>
     ) 
    }  
