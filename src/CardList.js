@@ -3,16 +3,16 @@ import Card from './Card';
 
 
 
-const CardList = ({cheese}) =>{
+const CardList = ({fcheese}) =>{
     
-    const cardArray = cheese.map((type, i)=>{
+    const cardArray = fcheese.map((currentCheese)=>{
         return ( <Card 
-            key={i} 
-            id={cheese[i].id} 
-            name = {cheese[i].name} 
-            origin ={cheese[i].origin} 
-            img={cheese[i].img} 
-            flavor ={cheese[i].flavor}/>
+            key={currentCheese.id} 
+            id={currentCheese.id} 
+            name = {currentCheese.name} 
+            origin ={currentCheese.origin} 
+            img={currentCheese.img} 
+            flavor ={currentCheese.flavor}/>
         )
     })
 
